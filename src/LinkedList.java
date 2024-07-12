@@ -34,4 +34,16 @@ public class LinkedList {
     this.head = removedHead.getNextNode();
     return removedHead.getData();
   }
+
+  @Override
+  public String toString() {
+    String output = "<head> ";
+    Node currentNode = this.head;
+    while (currentNode != null) {
+      output += currentNode.getData() + " ";
+      currentNode = currentNode.getNextNode();
+    }
+    output += "<tail>";
+    return output;
+  }
 }
