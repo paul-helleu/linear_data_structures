@@ -22,7 +22,16 @@ public class LinkedList {
       while (tail.getNextNode() != null) {
         tail = tail.getNextNode();
       }
-        tail.setNextNode(new Node(data));
+      tail.setNextNode(new Node(data));
     }
+  }
+  
+  public String removeHead() {
+    Node removedHead = this.head;
+    if (removedHead == null) {
+      return null;
+    }
+    this.head = removedHead.getNextNode();
+    return removedHead.getData();
   }
 }
