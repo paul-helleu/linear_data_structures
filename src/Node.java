@@ -7,6 +7,10 @@ public class Node {
     this.next = null;
   }
 
+  public void setNextNode(Node next) {
+    this.next = next;
+  }
+
   public String getData() {
     return data;
   }
