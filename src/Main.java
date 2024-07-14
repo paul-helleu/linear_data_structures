@@ -1,5 +1,13 @@
+import linkedList.LinkedList;
+
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello, world!");
+    LinkedList ll = new LinkedList();
+
+    ll.addToHead("Hello");
+    ll.addToTail("world!");
+    ll.addToHead("Bonjour");
+
+    System.out.println(ll);
   }
 }
